@@ -905,7 +905,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 8px;
+  gap: clamp(16px, 2.5vw, 32px);
 }
 
 #s8 .glow-1 {
@@ -916,40 +916,41 @@ h2 {
 }
 
 .closing-main {
-  font-size: clamp(26px, 2.8vw, 44px);
-  font-weight: 300;
-  color: rgba(255,255,255,0.6);
+  font-size: clamp(32px, 3.5vw, 56px);
+  font-weight: 900;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.2;
+  max-width: 900px;
+}
+
+.closing-headline {
+  font-size: clamp(24px, 2.5vw, 40px);
+  font-weight: 400;
+  color: rgba(255,255,255,0.55);
   line-height: 1.5;
+  max-width: 850px;
+}
+
+.closing-prediction {
+  font-size: clamp(26px, 2.8vw, 44px);
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.4;
   max-width: 800px;
 }
 
-.closing-takeaways {
-  display: flex;
-  gap: clamp(12px, 1.5vw, 24px);
-  max-width: 1000px;
+.closing-prediction em {
+  font-style: italic;
+  color: #ff7832;
 }
 
-.takeaway {
-  flex: 1;
-  text-align: center;
-  padding: clamp(14px, 1.4vw, 22px);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 12px;
-  background: rgba(255,255,255,0.02);
-}
-
-.takeaway-icon { font-size: clamp(32px, 3vw, 48px); margin-bottom: 4px; }
-
-.takeaway-text {
-  font-size: clamp(17px, 1.3vw, 22px);
-  font-weight: 500;
-  color: rgba(255,255,255,0.6);
-  line-height: 1.4;
-}
-
-.closing-question {
-  font-size: clamp(36px, 4.5vw, 72px);
-  font-weight: 900;
+.closing-stamp {
+  font-size: clamp(20px, 1.8vw, 30px);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.2);
 }
 
 .closing-bottom {
